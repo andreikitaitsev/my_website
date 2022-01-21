@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title> CV Andrei Kitaitsev</title>
+	<meta charset="UTF-8"/>
+	 <! -- for mobile websites, see https://www.sitepoint.com/a-basic-html5-template/ for details -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {text-align: left; font-size: 1.5em;}
+
+    div.left {position: fixed; 
+              top:  0;
+              bottom:  0;
+              margin:  0;
+              width: 20vw;
+              height:  100vh; 
+              background-color: #D3DEDC;}
+      div.mypic {margin: 0; text-align: center;}
+      div.mypic img {
+              width: 80%;
+              padding: 0;
+              margin: 5%;
+              border-radius: 50%;}
+      
+      div.credentials {width: 80%; margin: auto;}
+      div.credentials p {margin-top: 1vh; font-style: italic; 
+                font-weight: normal;}  
+      div.credentials h1 {margin-top: 1vh; font-size: 2rem;}
+      
+      
+
+      div.icons {text-align: center; position: absolute;
+                left: 0; bottom: 10%; width: 100%; height: auto; margin: 0}
+      div.icons a {margin: 1vw; text-align: center; color:  black; 
+                display: inline-block; margin: 0.5vw; text-decoration: none;}
+      div.icons a:hover {color:  brown;}
+
+    div.right {position: absolute;
+              width:  80vw;
+              left:  20vw;
+              height:  auto;
+              margin: 0;
+              }    
+      div.bio {width: 80%; margin: auto;}
+      div.detailed_data {width: 80%; margin: auto;}
+        a {color: black; text-decoration: none;}
+        a:hover {color:  brown;}
+        p.year {display: inline-block; text-align: right;}
+
+  .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 50%;
+    margin: 1vh;
+    border: none;
+    text-align: center;
+    outline: none;
+    
+    position: relative; left: 25%;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  div .education, .technical_skills,  .competences, .publications, .work_experience {
+    display: none;
+    overflow: hidden;
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="left">
+    
+    <div class="mypic">
+      <img src="images/index/img3.jpg" alt="picture_of_me:)">
+    </div>
+    
+    <div class="credentials">
+      <div class="title">
+        <h1>Andrei Kitaitsev</h1>
+        <p>data scientist</p>
+        <p>machine and deep learning engineer</p>
+        <p>web-developer</p>
+      </div>
+      <div class="icons" style="font-size: x-large;">
+        <a href="mailto:andre.kit17@gmail.com"><span class="fa fa-envelope"></span> </a>
+        <a href="https://github.com/andreikitaitsev"> <span class="fa fa-github"></span> </a>
+        <a href="https://www.facebook.com/profile.php?id=100005166762332"><span class="fa fa-facebook"></span> </a>
+        <a href=" www.linkedin.com/in/andrei-kitaitsev-b21a32208"> <span class="fa fa-linkedin"></span> </a>
+        <a href="https://twitter.com/kitaitsev"> <span class="fa fa-twitter"></span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="bio">
+      <p>I have done my Bachelor's in Biology (Neuroscience) and Master's Cognitive Science. Despite the formal names of the programmes, I have been mostly developing Brain-Machine Interfaces and machine and deep learning methods for the biological signals. I have a strong background in natural sciences and programming. Now I am working on side projects related to data science and front-end web development. Working in different fields taught me to approach each project individually and find non-standard solutions which serve its goals in accordance with agile projects paradigm. I am also open to a full-time job.
+      </p>
+    </div>
+
+    <div class="detailed_data">
+        
+      <button type="button" class="collapsible"><h1>Technical skills</h1></button> 
+      <!-- <h1 class="collapsible">Technical skills</h1>-->     
+        <div class="technical_skills">  
+          <h2>Machine learning and inferential statistics:</h2>
+          <ul>
+            <li><em>python:</em> sklearn, scipy, pandas, numpy, deap, statmodels</li>
+            <li><em>R:</em> lavaan, glm, caret, data explorer</li>
+            <li>matlab</li>
+          </ul>
+          <h2>Deep learning:</h2>
+          <ul>
+            <li><em>python:</em> pytorch, tensorflow 2</li>
+          </ul>
+          <h2>Data visualization:</h2>
+          <ul>
+            <li><em>python:</em> seabron, matplotlib, pandas</li>
+            <li><em>matlab</em></li>
+            <li><em>R:</em> ggplot2</li>
+          </ul>
+          <h2>Data mining:</h2>
+            <ul>
+              <li><em>python:</em> mySQL, sklearn, pandas</li>
+            </ul>
+          <h2>Parallel computing:</h2>
+            <ul>
+              <li><em><a href="https://slurm.schedmd.com/documentation.html">SLURM</em></a></li>
+            </ul>
+          <h2>Web development:</h2>
+            <ul>
+              <li><em>Front-end:</em> html5, CSS, JavaScript</li>
+              <li><em>Web scraping with python:</em> BeautifulSoup, urllib</li>
+        </div>
+      
+      <button type="button" class="collapsible"><h1>Competences</h1></button> 
+        <div class="competences">
+          <h2>Machine learning:</h2>
+          <p> classification, regression, data projection, data clustering</p>
+          <h2>Deep learning:</h2><p> CNN, RNN, LSTM, transformers (self- and cross-attention)</p>
+          <h2>Inferential Statistics:</h2><p> Bayesian statistics, statistical testing, GLM, hierarchical linear models, Factor analysis, Structural Equations Modelling, Cluster analysis</p>
+          <h2>Data minimg:</h2><p> PCA, ICA, CCA, multifractal analysis</p>
+          <h2>Digital signal processing:</h2><p> time-series analysis (wavelet analysis, Hilbert transform), filtering (FIR, IIR)</p>
+          <h2>Nonlinear Dynamical systems:</h2><p> DMD, SIDN, kernel methods</p>
+          <h2>Brain-Computer interfaces:</h2><p> P300 BCI, fNIRS, SSVEP, eye-tracking, encoding-decoding models</p>         
+        </div>
+
+      <button type="button" class="collapsible"><h1>Education</h1></button>  
+          <div class="education">
+            <a href="documents/diploma.pdf"><h2 class="master"> Master of Science </h2> </a>
+            <p class="year">2019-2021</p>
+            Carl von Ossietzky University of Oldenburg, Germany 
+            <ul>
+              <li>DAAD scholarship for Master Studies for All Academic Disciplines, Germany (2019-2021)</li>
+            </ul>
+            Freie Universität Berlin, Germany
+            <ul>
+              <li>External Master thesis: <a href="https://www.ewi-psy.fu-berlin.de/en/einrichtungen/arbeitsbereiche/neural_dyn_of_vis_cog/team_v2/former_members/andrei/index.html">
+              „Intersubject generalization in encoding models exploiting DNNs"</a></li>
+            </ul>
+
+            <a href="documents/diploma.pdf"><h2 class="bachelor"> Bachelor of Science </h2> </a> 
+            Lomonosov Moscow State University, Russia
+            <p class="year">2015-2019</p>
+            <ul>
+              <li>Bachelor thesis: “Effects of target stimulus features on visual evoked potentials in P300 BCI paradigm”</li>
+              <li>Enhanced academic scholarship</li>
+            </ul>
+          </div>
+            
+      <button type="button" class="collapsible"><h1>Internships and work experience</h1></button> 
+        <div class="work_experience">
+          <h2>Student-job:</h2><p> research assistant at the laboratory of Applied Neurocognitive Psychology, Carl von Ossietzky Universität Oldenburg</p> <p class="year">2020-2021</p>
+          <ul>
+            <li>Estimating noise caused by external magnetic field in MEG (Python)</li>
+          </ul>
+          <h2>Internship:</h2><p>laboratory of Neuropsychology, Department of Psychology, Carl von Ossietzky Universität Oldenburg</p>
+          <p class="year">2020</p>
+          <ul>
+            <li>Using change of basis data representation methods (ICA, ASR) to estimate artifacts in outdoors EEG recording (matlab)</li>
+          </ul>
+          <h2>Internship:</h2><p>Laboratory for Neurophysiology and Neuro-Computer Interfaces Department of Human and Animal physiology, Biological Faculty, MSU</p>
+          <p class="year">2020</p>
+          <ul>
+            <li>Enhancing the performance of P300 BCI: Influence of stimulus properties 
+              <a href="https://github.com/andreikitaitsev/P300_BCI">(matlab)</a></li>
+          </ul>
+        </div>
+
+      <button type="button" class="collapsible"><h1>Publications</h1></button>
+        <div class="publications">
+          <ul>
+            <li>P300 BCI speller with human face images: the effects of stimuli variability, Andrei Kitaitsev, 
+            Ilya Ganin, Rafael Grigoryan, Anatoly Vasilyev, Alexander Kaplan, BCI: Science & Practice, Samara 2020, <a href="https://bcisamara.com/bcisamara/agenda/">Symposium presentation</a></li>
+            <li>Effect of additional variability of stimuli features on visual evoked potentials in P300 BCI paradigm. *Translated from Russian, 2019. Thesis Lomonosov International science conference for young scientists and students <a href="https://lomonosov-msu.ru/archive/Lomonosov_2019/data/section_2_16089.htm"></a>(published online).</a></li>
+            <li>Study of spatial characteristics of quadrupedal locomotion in Vespertilionid bats (Published in Biology Bulletin 2018, Vol. 45, No. 9, pp. 999–1011, DOI: 10.1134/S1062359018090054).</li>
+            <li>Strategies of maintenance of water balance among several plant species, 2017. E. Andreeva, V. Akhmetov, A. Kitaitsev et al., local miscellany “Flora and Fauna of the Western Moscow region” *Translated from Russian.</li>
+          </ul>
+        </div>
+
+    </div>
+  </div>
+
+  <script>  /* opens the div which follows the collapsible button */
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+</body>
