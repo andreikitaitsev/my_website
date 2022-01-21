@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {text-align: left; font-size: 1.5em;}
-
+    a {color: #001564; text-decoration: none;}
+    a:hover {color:  brown;}
+    
     div.left {position: fixed; 
               top:  0;
               bottom:  0;
@@ -33,7 +35,7 @@
 
       div.icons {text-align: center; position: absolute;
                 left: 0; bottom: 10%; width: 100%; height: auto; margin: 0}
-      div.icons a {margin: 1vw; text-align: center; color:  black; 
+      div.icons a {margin: 1vw; text-align: center; 
                 display: inline-block; margin: 0.5vw; text-decoration: none;}
       div.icons a:hover {color:  brown;}
 
@@ -45,9 +47,23 @@
               }    
       div.bio {width: 80%; margin: auto;}
       div.detailed_data {width: 80%; margin: auto;}
-        a {color: black; text-decoration: none;}
-        a:hover {color:  brown;}
-        p.year {display: inline-block; text-align: right;}
+      
+
+      p.year {display: inline-block; text-align: right; padding-left: 2vw;}
+      p.heading {font-weight: bold;}
+
+      .work_experience p span {font-weight: bold;}
+      .education p.heading {display: inline-block;}
+      .education p.heading, .education p.data,  .work_experience p.heading, .work_experience ul.data {width: 80%;}
+      .education ul {width: 74%;}
+
+      .education p.year {display: inline-block; text-align: right;
+        font-style: italic;}
+
+      .work_experience p.heading {font-weight: normal;}
+      .work_experience p.heading {display: inline-block; width: 80%;}
+      .work_experience p.year {display: inline-block;  text-align: right; vertical-align: top;
+        font-style: italic;}
 
   .collapsible {
     background-color: #eee;
@@ -110,31 +126,31 @@
       <button type="button" class="collapsible"><h1>Technical skills</h1></button> 
       <!-- <h1 class="collapsible">Technical skills</h1>-->     
         <div class="technical_skills">  
-          <h2>Machine learning and inferential statistics:</h2>
+          <p class="heading">Machine learning and inferential statistics:</p>
           <ul>
             <li><em>python:</em> sklearn, scipy, pandas, numpy, deap, statmodels</li>
             <li><em>R:</em> lavaan, glm, caret, data explorer</li>
             <li>matlab</li>
           </ul>
-          <h2>Deep learning:</h2>
+          <p class="heading">Deep learning:</p>
           <ul>
             <li><em>python:</em> pytorch, tensorflow 2</li>
           </ul>
-          <h2>Data visualization:</h2>
+          <p class="heading">Data visualization:</p>
           <ul>
             <li><em>python:</em> seabron, matplotlib, pandas</li>
             <li><em>matlab</em></li>
             <li><em>R:</em> ggplot2</li>
           </ul>
-          <h2>Data mining:</h2>
+          <p class="heading">Data mining:</p>
             <ul>
               <li><em>python:</em> mySQL, sklearn, pandas</li>
             </ul>
-          <h2>Parallel computing:</h2>
+          <p class="heading">Parallel computing:</p>
             <ul>
               <li><em><a href="https://slurm.schedmd.com/documentation.html">SLURM</em></a></li>
             </ul>
-          <h2>Web development:</h2>
+          <p class="heading">Web development:</p>
             <ul>
               <li><em>Front-end:</em> html5, CSS, JavaScript</li>
               <li><em>Web scraping with python:</em> BeautifulSoup, urllib</li>
@@ -142,33 +158,53 @@
       
       <button type="button" class="collapsible"><h1>Competences</h1></button> 
         <div class="competences">
-          <h2>Machine learning:</h2>
-          <p> classification, regression, data projection, data clustering</p>
-          <h2>Deep learning:</h2><p> CNN, RNN, LSTM, transformers (self- and cross-attention)</p>
-          <h2>Inferential Statistics:</h2><p> Bayesian statistics, statistical testing, GLM, hierarchical linear models, Factor analysis, Structural Equations Modelling, Cluster analysis</p>
-          <h2>Data minimg:</h2><p> PCA, ICA, CCA, multifractal analysis</p>
-          <h2>Digital signal processing:</h2><p> time-series analysis (wavelet analysis, Hilbert transform), filtering (FIR, IIR)</p>
-          <h2>Nonlinear Dynamical systems:</h2><p> DMD, SIDN, kernel methods</p>
-          <h2>Brain-Computer interfaces:</h2><p> P300 BCI, fNIRS, SSVEP, eye-tracking, encoding-decoding models</p>         
+          <p class="heading">Machine learning:</p>
+          <ul>
+            <li><p class="data">classification, regression, data projection, data clustering</p></li>
+          </ul>
+          <p class="heading">Deep learning:</p>
+          <ul>
+            <li><p class="data">CNN, RNN, LSTM, transformers (self- and cross-attention)</p></li>
+          </ul>
+          <p class="heading">Inferential Statistics:<p>
+          <ul>
+            <li><p class="data">Bayesian statistics, statistical testing, GLM, hierarchical linear models, Factor analysis, Structural Equations Modelling, Cluster analysis</p></li>
+          </ul>
+          <p class="heading">Data minimg:</p>
+          <ul>
+            <li><p class="data"> PCA, ICA, CCA, multifractal analysis</p></li>
+          </ul>
+          <p class="heading">Digital signal processing:</p>
+          <ul>
+            <li><p class="data"> time-series analysis (wavelet analysis, Hilbert transform), filtering (FIR, IIR)</p></li>
+          </ul>
+          <p class="heading">Nonlinear Dynamical systems:</p>
+          <ul>
+            <li><p class="data"> DMD, SIDN, kernel methods</p></li>
+          </ul>
+          <p class="heading">Brain-Computer interfaces:</p>
+          <ul>
+            <li><p class="data"> P300 BCI, fNIRS, SSVEP, eye-tracking, encoding-decoding models</p></li>
+          </ul>         
         </div>
 
       <button type="button" class="collapsible"><h1>Education</h1></button>  
           <div class="education">
-            <a href="documents/diploma.pdf"><h2 class="master"> Master of Science </h2> </a>
+            <a href="documents/diploma.pdf"><p  class="heading"> Master of Science </p> </a>
             <p class="year">2019-2021</p>
-            Carl von Ossietzky University of Oldenburg, Germany 
+            <p class="uni">Carl von Ossietzky University of Oldenburg, Germany</p> 
             <ul>
               <li>DAAD scholarship for Master Studies for All Academic Disciplines, Germany (2019-2021)</li>
             </ul>
-            Freie Universität Berlin, Germany
+            <p class="uni">Freie Universität Berlin, Germany</p>
             <ul>
               <li>External Master thesis: <a href="https://www.ewi-psy.fu-berlin.de/en/einrichtungen/arbeitsbereiche/neural_dyn_of_vis_cog/team_v2/former_members/andrei/index.html">
               „Intersubject generalization in encoding models exploiting DNNs"</a></li>
             </ul>
 
-            <a href="documents/diploma.pdf"><h2 class="bachelor"> Bachelor of Science </h2> </a> 
-            Lomonosov Moscow State University, Russia
+            <a href="documents/diploma.pdf"><p  class="heading">Bachelor of Science </p></a> 
             <p class="year">2015-2019</p>
+            <p class="uni">Lomonosov Moscow State University, Russia</p>
             <ul>
               <li>Bachelor thesis: “Effects of target stimulus features on visual evoked potentials in P300 BCI paradigm”</li>
               <li>Enhanced academic scholarship</li>
@@ -177,18 +213,19 @@
             
       <button type="button" class="collapsible"><h1>Internships and work experience</h1></button> 
         <div class="work_experience">
-          <h2>Student-job:</h2><p> research assistant at the laboratory of Applied Neurocognitive Psychology, Carl von Ossietzky Universität Oldenburg</p> <p class="year">2020-2021</p>
-          <ul>
+          <p class="heading"><span>Student-job:</span> research assistant at the <a href="https://uol.de/angewandte-neurokognitive-psychologie">laboratory of Applied Neurocognitive Psychology</a>, Carl von Ossietzky Universität Oldenburg</p> <p class="year">2020-2021</p>
+          <ul class="data">
             <li>Estimating noise caused by external magnetic field in MEG (Python)</li>
           </ul>
-          <h2>Internship:</h2><p>laboratory of Neuropsychology, Department of Psychology, Carl von Ossietzky Universität Oldenburg</p>
+          <p class="heading"><span>Internship:</span> <a href="https://uol.de/neuropsychologie">laboratory of Neuropsychology</a>, Department of Psychology, Carl von Ossietzky Universität Oldenburg</p>
           <p class="year">2020</p>
-          <ul>
+          <ul class="data">
             <li>Using change of basis data representation methods (ICA, ASR) to estimate artifacts in outdoors EEG recording (matlab)</li>
           </ul>
-          <h2>Internship:</h2><p>Laboratory for Neurophysiology and Neuro-Computer Interfaces Department of Human and Animal physiology, Biological Faculty, MSU</p>
+          <p class="heading"><span>Internship:</span> <a href="http://brain.bio.msu.ru/">Laboratory for Neurophysiology and Neuro-Computer Interfaces,</a>
+          Department of Human and Animal physiology, Biological Faculty, Lomonosov Moscow State University</p>
           <p class="year">2020</p>
-          <ul>
+          <ul class="data">
             <li>Enhancing the performance of P300 BCI: Influence of stimulus properties 
               <a href="https://github.com/andreikitaitsev/P300_BCI">(matlab)</a></li>
           </ul>
